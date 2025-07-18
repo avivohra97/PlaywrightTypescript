@@ -21,6 +21,7 @@ test(`No need to create context and page and use only the fixture`, async ({ pag
     if action performed inside then await used inside
     */
     expect(await page.title()).toBe('Google');
+    
     await expect(page).toHaveTitle('Google');
     // expect(await page.title())('Google');
     // expect the title to be Google    
